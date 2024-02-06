@@ -1,0 +1,42 @@
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+
+  <body>
+    <%- include("./partials/nav.ejs") %>
+
+    <div class="details content">
+      <form action="/<%=task.id%>" method="post">
+      <h2><%= task.title %></h2>
+      <div class="content">
+        <p id="title" name="title" required>Student Code:</p>
+        
+        <pre id="solution" style="display: none;">
+          <code class="javascript"><%= task.correctAnswer %></code>
+        </pre>
+        
+        <pre id="studentCodeJS" style="display: hide;">
+          <code class="javascript"><%=task.studentCode %></code>
+        </pre>
+
+        <textarea oninput= "changeAnswer(event)" id="studentCode" name="studentCode" required ><%= task.studentCode %></textarea>
+        <button class="submit-button">Submit</button>
+        
+        <% if (task.TF === ':)') { %>
+          <img class="smile" src="/smileFace.png" alt="Smile Face" width="100">
+        <% } %>
+
+      </form>
+      </div>
+    </div>
+    <script
+      src="https://cdn.socket.io/4.7.4/socket.io.min.js"
+      integrity="sha384-Gr6Lu2Ajx28mzwyVR8CFkULdCU7kMlZ9UthllibdOSo6qAiN+yXNHqtgdTvFXMT4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="functions.js" type="text/javascript"></script>
+    <script>hljs.highlightAll();</script>
+    <%- include("./partials/footer.ejs") %>
+  </body>
+</html>
+

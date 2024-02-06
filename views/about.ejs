@@ -1,0 +1,28 @@
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+
+  <body>
+    <%- include("./partials/nav.ejs") %>
+
+    <div class="about content">
+      <h2>About</h2>
+    </div>
+    <div id="socials-container">
+      <img
+        src="./linkedin.png"
+        alt="My Linkdin Profile"
+        class="icon"
+        onclick="location.href='https://www.linkedin.com/in/omer-peled6/'"
+      />
+      <img src="./profile.png" alt="My Profile" class="icon" />
+      <img
+        src="./github.png"
+        alt="My Github Profile"
+        class="icon"
+        onclick="location.href='https://github.com/omerpeled6'"
+      />
+    </div>
+
+    <%- include("./partials/footer.ejs") %>
+  </body>
+</html>

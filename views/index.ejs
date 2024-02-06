@@ -1,0 +1,42 @@
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+
+  <body>
+    <%- include("./partials/nav.ejs") %>
+
+    <div class="tasks content">
+      <h2>All Task</h2>
+
+      <% if (tasks.length > 0) { %> <% tasks.forEach(task => { %>
+
+      <a class="single" href="/<%=task.id%>" 
+        <h3 class="title"><%= task.title %></h3>
+        <p class="studentCode">
+          <b><u>student Code:</u> </b><%= task.studentCode %>
+        </p>
+        <p class="TF" style="display: none;"><%= task.TF %></p>
+      </a>
+
+      <% }) %> <% } else { %>
+      <p>There are no tasks to display...</p>
+      <% } %>
+    </div>
+
+    <%- include("./partials/footer.ejs") %>
+    <script>
+      // Add green Style when currect code
+      document.addEventListener("DOMContentLoaded", function () {
+        let tasks = document.querySelectorAll('.single');
+        tasks.forEach(function (task) {
+          let TF = task.querySelector('.TF').innerText.trim();
+          if (TF === ':)') {
+            task.style.borderLeftColor = 'green'; // change side red to green
+          } else {
+            task.style.borderLeftColor = 'crimson';
+          }
+        });
+      });
+    </script>
+
+  </body>
+</html>
