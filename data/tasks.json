@@ -1,1 +1,30 @@
-[{"title":"Fix the function","id":1,"correctAnswer":"const sum = (num1, num2) => { return console.log(num1 + num2);};","TF":"","studentCode":"const sum = (num1, num2) => { return console.log(num1 + num2);}"},{"title":"Print all the numbers between 1 and 10","studentCode":"for(let i=1 ; i<=10 ; i++) {console.log(i};}","id":2,"correctAnswer":"for(let i=1 ; i<=10 ; i++) {console.log(i};}","TF":":)"},{"title":"Print - Hello World","studentCode":"console.log('Hello, World!')","id":3,"correctAnswer":"console.log('Hello, World!');","TF":""},{"title":"Function isEven","studentCode":"Function isEven(num) = { if (num%2 ==0) {console.log(num%2}; }","id":4,"correctAnswer":"Function isEven(num) = { if (num%2 ==0) {console.log(num%2}; }","TF":":)"}]
+[
+  {
+    "title": "Fix the function",
+    "id": 1,
+    "correctAnswer": "const sum = (num1, num2) => { return console.log(num1 + num2);};",
+    "TF": "",
+    "studentCode": "const sum = (num1, num2) => { return console.log(num1 + num2);}"
+  },
+  {
+    "title": "Print all the numbers between 1 and 10",
+    "studentCode": "for(let i=1 ; i<=10 ; i++) {console.log(i};}",
+    "id": 2,
+    "correctAnswer": "for(let i=1 ; i<=10 ; i++) {console.log(i};}",
+    "TF": ":)"
+  },
+  {
+    "title": "Print - Hello World",
+    "studentCode": "console.log('Hello, World!')",
+    "id": 3,
+    "correctAnswer": "console.log('Hello, World!');",
+    "TF": ""
+  },
+  {
+    "title": "Function isEven",
+    "studentCode": "Function isEven(num) = { if (num%2 ==0) {console.log(num%2}; }",
+    "id": 4,
+    "correctAnswer": "Function isEven(num) = { if (num%2 ==0) {console.log(num%2}; }",
+    "TF": ":)"
+  }
+]
