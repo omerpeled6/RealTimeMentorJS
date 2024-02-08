@@ -36,7 +36,8 @@ The Code Block page is where the mentor and student interact with the shared cod
 
 To run the project locally, follow these steps:
 1. donwload node.js - to run -> node app.js
-2. download nodemon - nodemon app
+2. download nodemon -> nodemon app
+3. To Open the project on the website -> http://localhost:3000/
 
 ## Information sources and websites I used
 1. highlights:
